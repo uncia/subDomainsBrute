@@ -41,3 +41,14 @@ Options:
 Output file could be like: [http://www.lijiejie.com/wp-content/uploads/2015/04/baidu.com_.txt](http://www.lijiejie.com/wp-content/uploads/2015/04/baidu.com_.txt)
 
 my[at]lijiejie.com ([http://www.lijiejie.com](http://www.lijiejie.com))
+
+今天换个了环境测试 出现了
+Traceback (most recent call last):
+  File "./subDomainsBrute.py", line 9, in <module>
+    import dns.resolver
+ImportError: No module named dns.resolver
+
+解决办法 :
+git clone https://github.com/rthalley/dnspython
+cd dnspython/
+python setup.py install
